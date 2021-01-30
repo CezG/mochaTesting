@@ -6,4 +6,4 @@ Project Configuration
 
 You can use [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) to install any TypeScript or JavaScript library in the Terminal window in Rider. Alternatively, you can enter the package name and version into the package.json file. Add a `project.json` file to the project by using `Ctrl + N` and typing `package.json`.
 
-![cos](.public/1.png "test")
+![cos](./public/1.png "test")
