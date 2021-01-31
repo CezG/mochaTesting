@@ -110,8 +110,71 @@ Once you’ve completed testing, **export the test results to an HTML, XML, or c
 ![export results](./public/ts-test-exportresults.png "export results")
 ![export results](./public/ts-test-exportresults.gif "export results")
 
+## For people who like using cli :
+
+```bash
+mkdir app
+cd app
+npm init
+
+```
+
+Install with npm globally:
+
+```bash
+npm install --global mocha
+```
+
+or as a development dependency for your project:
+
+```bash
+npm install --save-dev mocha
+```
+
+**GETTING STARTED**
+
+```bash
+npm install mocha
+mkdir test
+$EDITOR test/test.js # or open with your favorite editor
+```
+
+In your editor:
+
+```javascript
+var assert = require("assert");
+describe("Array", function () {
+  describe("#indexOf()", function () {
+    it("should return -1 when the value is not present", function () {
+      assert.equal([1, 2, 3].indexOf(4), -1);
+    });
+  });
+});
+```
+
+Back in the terminal:
+
+```bash
+ ./node_modules/mocha/bin/mocha
+
+  Array
+    #indexOf()
+      ✓ should return -1 when the value is not present
+
+
+  1 passing (9ms)
+```
+
+Set up a test script in package.json:
+
+```javascript
+"scripts": {
+  "test": "mocha"
+}
+```
+
 ## Summary
 
 There is much more you can do with Mocha and Chai, or any TypeScript unit testing framework you use that isn’t demonstrated here so start searching for new experience :-).
 
-If You would like to watch a movie tutorial than https://www.youtube.com/watch?v=MLTRHc5dk6s .
+If You would like to watch a movie tutorial with using cli than https://www.youtube.com/watch?v=_56LSAV_hEA .
